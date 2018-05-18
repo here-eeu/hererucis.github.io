@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HERE venue example</title>
+
+		<!-- Подключаем библиотеки Here API for JavaScript -->
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-data.js"></script>
+
+		<!-- Полючаем файлы css и js  -->
+		<link rel="stylesheet" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css" type="text/css" />
+		
+
+		<!-- Поключаем плагин местоположения -->
+		<script type="text/javascript" src="libs/here-positioning-plugin/src/here-positioning-control/here-positioning-control.js"></script>
+		<link rel="stylesheet" type="text/css" href="libs/here-positioning-plugin/src/here-positioning-control/here-positioning-control.css">
+
+		<!-- Подключаем плагин домашнего экстенда -->
+		<script type="text/javascript" src="libs/here-homeview-plugin/src/here-homeview-control/here-homeview-control.js"></script>
+		<link rel="stylesheet" type="text/css" href="libs/here-homeview-plugin/src/here-homeview-control/here-homeview-control.css">
+
+
+		<!-- Подключаем плагин VENUE -->
+		<script type="text/javascript" src="libs/here-venue-plugin/src/here-venue-control/here-venue-control.js"></script>
+		<link rel="stylesheet" type="text/css" href="libs/here-venue-plugin/src/here-venue-control/here-venue-control.css">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+		<div id="map"></div>
+
+		
+		<!-- Загружаем слои в проект -->
+		<script type="text/javascript" src="data/first_level.js"></script>
+		<script type="text/javascript" src="data/second_level.js"></script>
+		<script type="text/javascript" src="data/third_level.js"></script>
+
+
+		<!-- Основная логика карты -->
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</body>
+</html>
