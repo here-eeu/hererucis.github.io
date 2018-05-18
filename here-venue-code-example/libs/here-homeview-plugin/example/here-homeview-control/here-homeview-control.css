@@ -1,0 +1,16 @@
+#ctrl-homeview{
+	background: #00afaa;
+    padding: 8px;
+    box-shadow: 0 0 0 0.1rem rgba(1, 11, 30, 0.1);
+    border-radius: 0.3em;
+    margin-bottom: 0.8rem;
+    border:1px solid #fff;
+}
+
+#ctrl-homeview:hover{
+	background: #48dad0
+}
+
+#ctrl-homeview path {
+	fill: #fff
+}

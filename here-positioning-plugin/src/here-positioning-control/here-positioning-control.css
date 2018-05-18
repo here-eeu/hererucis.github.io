@@ -1,0 +1,21 @@
+.btn-location{
+	background: #fff;
+    padding: 8px;
+    box-shadow: 0 0 0 0.1rem rgba(1, 11, 30, 0.1);
+    border-radius: 0.2em;
+    margin-bottom: 0.8rem;
+}
+
+.active {
+	background:rgba(255, 255, 255, 0.74);
+}
+
+svg path.middle_location_stroke {
+    fill: #74ED26 !important;
+}
+svg path.inner_location_stroke {
+    fill: #1C5927 !important;
+}
+svg path.outer_location_stroke {
+    fill: #1C5927 !important;
+}

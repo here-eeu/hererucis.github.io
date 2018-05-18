@@ -69,21 +69,39 @@
 				      }
 				    });
 
+				    that.geoGroup = new H.map.Group(); 
+					
 					// Создаем маркер с координатами нашего местоположения
-					that.marker = new H.map.Marker(center);
+					that.marker = new H.map.Circle(center, 1.5, {
+				      style: {
+				        strokeColor: '#245f2f',
+				        lineWidth: 1,
+				        fillColor: 'rgba(116, 237, 38, 0.78)'
+				      }
+				    });
 
+					that.marker2 = new H.map.Circle(center, 0.8, {
+				      style: {
+				        strokeColor: '#245f2f',
+				        lineWidth: 1,
+				        fillColor: 'rgba(255, 255, 255, 0.74)'
+				      }
+				    });
+
+					that.geoGroup.addObject(that.marker);
+					that.geoGroup.addObject(that.marker2);
 					// Масштабируемся на местоположения
 					map.setCenter(center);
 					
 					// добавляем созданные объекты на карту
 					map.addObject(that.area);
-					map.addObject(that.marker);
+					map.addObject(that.geoGroup);
 				});
 
 			} else {
 				// Если класс active есть - удаляем класс и объекты с карты
 				button.classList.remove("active");
-				map.removeObject(that.marker);
+				map.removeObject(that.geoGroup);
 				map.removeObject(that.area);
 			} 
 		}
