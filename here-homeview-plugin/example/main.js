@@ -1,7 +1,7 @@
 
 var platform = new H.service.Platform({
-  app_id: 'YOUR APP ID',
-  app_code: 'YOUR APP CODE',
+  app_id: 'DemoAppId01082013GAL',
+  app_code: 'AJKnXv84fjrb0KIHawS0Tg',
   useCIT: true,
   useHTTPS: true
 });
