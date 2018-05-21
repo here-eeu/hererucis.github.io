@@ -1,0 +1,14 @@
+#ctrl-coordinates{
+	display: flex;
+	flex-direction: row;
+	background: #fff;
+    font-size: 12px;
+    padding: 6px;
+    width: 188px;
+    text-align: center;
+    box-shadow: 0 0 0 0.1rem rgba(1, 11, 30, 0.1);
+    color: #1f262a; 
+}
+.coords-style{
+	text-align:left;
+}
