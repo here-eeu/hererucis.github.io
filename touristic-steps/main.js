@@ -16,7 +16,7 @@
 	    },
 	    'Behavior' :    {},         // Manage map behaviors
 	    'Container' :   {},         // Reference to DOM object containing map
-	    'PlacesService' :      {},         // Geocoder service
+	    'PlacesService' :      {},  // Geocoder service
 	    'PlacesGroup': 	{},			// Group for markers
 	    'Lat' :         55.751,     // Latitude
 	    'Lng' :         37.620,     // Longitude
@@ -63,6 +63,8 @@
 	}
 
 	displayMap()
+
+
 
 	// Step 2 - Calculations
 
@@ -151,9 +153,7 @@
 		} else {
 			G.LocationMarker = C.CreateMarker(G.CurrentPosition, {})
 			M.Map.addObject(G.LocationMarker)
-		}
-		
-			
+		}		
 	}
 
 	G.ShowError = error =>{
@@ -178,11 +178,15 @@
 	document.querySelector('#search').addEventListener('click', e => {
 
 		if(document.querySelector("#steps").value != ''){
-			P.Radius = C.CvtStepsToMeters(Number(document.querySelector("#steps").value))
-			P.Latitude  = G.CurrentPosition.lat
-			P.Longitude = G.CurrentPosition.lng
+            try{
+    			P.Radius = C.CvtStepsToMeters(Number(document.querySelector("#steps").value))
+    			P.Latitude  = G.CurrentPosition.lat
+    			P.Longitude = G.CurrentPosition.lng
 
-			P.ShowPlaces()
+    			P.ShowPlaces()
+            }catch(err){
+                console.log(err)
+            }
 		} 
 		
 	})
