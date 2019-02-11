@@ -173,10 +173,10 @@
 		}
 	}
 
-	G.StartTrackPosition()
+	
 
 	document.querySelector('#search').addEventListener('click', e => {
-
+		G.StartTrackPosition()
 		if(document.querySelector("#steps").value != ''){
             try{
     			P.Radius = C.CvtStepsToMeters(Number(document.querySelector("#steps").value))
